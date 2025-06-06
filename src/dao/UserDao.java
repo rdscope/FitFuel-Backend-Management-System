@@ -7,11 +7,11 @@ import java.sql.SQLException;
 import java.util.List;
 
 public interface UserDao extends DAO<User> {
-//    User findByEmail(String email) throws SQLException;
+//    User findByEmail(String email) throws SQLException; --unfullfilled
 
     List<User> findByBirthdayMonth(int month) throws SQLException;
 
-//    boolean existsByEmail(String email) throws SQLException;
+//    boolean existsByEmail(String email) throws SQLException; --unfullfilled
 
     User getByEmailAndPassword(String email, String password) throws SQLException;
 
