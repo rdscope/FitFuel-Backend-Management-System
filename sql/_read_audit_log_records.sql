@@ -1,0 +1,1 @@
+SELECT * FROM AuditLog ORDER BY timestamp DESC;

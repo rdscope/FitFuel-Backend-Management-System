@@ -1,0 +1,1 @@
+ALTER TABLE User ADD COLUMN threshold_accumulated DECIMAL(10,2) DEFAULT 0;

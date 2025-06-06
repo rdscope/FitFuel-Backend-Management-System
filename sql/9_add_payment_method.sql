@@ -1,0 +1,2 @@
+ALTER TABLE `Order`
+ADD COLUMN payment_method VARCHAR(20) DEFAULT NULL;
