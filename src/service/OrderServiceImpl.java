@@ -342,7 +342,7 @@ public class OrderServiceImpl implements SERVICE<Order> {
             usedCode = null;
             return true;
 
-        } else if (optionMap.get(choice).startsWith("user-")) {
+        } else if (optionMap.get(choice).startsWith("user")) {
             int udId = Integer.parseInt(optionMap.get(choice).split("-")[1]);
             selectedUserCoupon = userDiscountService.getById(udId);
 
@@ -359,7 +359,7 @@ public class OrderServiceImpl implements SERVICE<Order> {
                             "[Personal]";
 
 
-        } else if (optionMap.get(choice).startsWith("active-")) {
+        } else if (optionMap.get(choice).startsWith("active")) {
             int did = Integer.parseInt(optionMap.get(choice).split("-")[1]);
             Discount d = discountDao.getById(did);
             UsedDiscountCodeDao usedCodeDao = new UsedDiscountCodeDaoImpl(conn);
