@@ -1,5 +1,5 @@
 package service;
-
+// Too many No Usages
 import Util.DiscountCodeUtil;
 import dao.*;
 import model.*;
@@ -185,6 +185,7 @@ public class OrderServiceImpl implements SERVICE<Order> {
         }
     }
 
+    // Checkout from here, but it's large...
     // Step 1: 建立訂單（空 total）
     public Order createOrder(int userId) throws ServiceException {
         // TODO: 使用 generateOrderCode 產生 code

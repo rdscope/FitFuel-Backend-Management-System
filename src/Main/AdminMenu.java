@@ -97,7 +97,7 @@ public class AdminMenu {
                     DiscountManagementMenu.show(conn, scanner, discountService, auditLogService, user);
                     break;
 
-
+                // Connect SQL to check if it works fine... # 8 ~ 9
                 case "8":  // 成品商品警戒值檢查
                     auditLogService.log("Product", "READ", "Admin checked finished product low stock", user.getUserId());
                     System.out.print("Enter stock threshold for finished products (integer): ");
@@ -120,8 +120,7 @@ public class AdminMenu {
                     } catch (ServiceException e) {
                         System.out.println("Failed to retrieve products: " + e.getMessage());
                     }
-                    break
-                            ;
+                    break;
 
                 case "9":  // 現做商品原料是否低於各自警戒值
                     auditLogService.log("RawMaterial", "READ", "Admin checked made-to-order raw material shortage", user.getUserId());
